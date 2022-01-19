@@ -16,7 +16,7 @@ fn raw_ident(i: &str) -> IResult<&str, String> {
             "abcdefghijklmnopqrstuvwxyz \
          ABCDEFGHIJKLMNOPQRSTUVWXYZ \
          0123456789 \
-         _-",
+         _-+",
         ),
         |s: &str| s.to_string(),
     )(i)
